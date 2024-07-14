@@ -1,0 +1,2 @@
+newDate()
+console.log(newDate())
