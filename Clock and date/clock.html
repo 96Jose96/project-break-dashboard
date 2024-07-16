@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clock and Date</title>
-</head>
-<body>
-    <header>
-        <h1 id="clock">Reloj</h1>
-        <p id="phrases">frases</p>
-        <h2 id="date">fecha</h2>
-    </header>
-    <script src="./clock.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./clockstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <title>Clock and Date</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <a href=""><img src="./Assets/Back.svg" /></a>
+                    <a href="">Página principal</a>
+                </nav>
+            </header>
+            <section class="digitalclock">
+                <span id="date"></span>
+                <div id="clock" class="clock"></div>
+                <span id="phrases"></span>
+            </section>
+            <footer class="clockfooter">
+                <a href="">tiempo</a>
+                <a href="">contraseñas</a>
+                <a href="">links</a>
+            </footer>
+            <script src="./clock.js"></script>
+        </main>
+    </body>
 </html>

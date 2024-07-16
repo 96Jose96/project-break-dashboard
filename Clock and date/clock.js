@@ -7,7 +7,7 @@ const hour = () => {
     }
     let minutes = now.getMinutes()
     if (minutes < 10) {
-        hours = `0${minutes}`
+        minutes = `0${minutes}`
     }
     let seconds = now.getSeconds()
     if (seconds < 10) {
