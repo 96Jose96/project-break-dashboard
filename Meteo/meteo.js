@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const city = 'la zubia'
+    const city = 'madrid'
     const url = `https://api.weatherapi.com/v1/forecast.json?key=812f1314d5e54007a3d92843241907&q=${city}&aqi=no`;
 
     const getWeather = async () => {
