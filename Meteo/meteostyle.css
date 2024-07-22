@@ -54,6 +54,7 @@ body {
 }
 
 nav img {
+	padding: 20px;
 	width: 50px;
 	transition: 0.1s ease;
 }
@@ -69,13 +70,60 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 20px;
 	background-image: url(../Wallpapers/Wallpaper2.jpg);
 	background-position: center;
 	background-size: cover;
 }
 
+section {
+	margin: 0 auto;
+}
 
+.currentcontainer {
+	width: 500px;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(240, 248, 255, 0.116);
+	border-radius: 10px;
+	gap: 20px;
+}
+
+.location {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	font-size: 40px;
+	align-items: flex-start;
+}
+
+.location img {
+	width: 100px;
+}
+
+.tempconditions {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 10px;
+}
+
+.currenttemp {
+	font-size: 60px;
+}
+
+.weatherconditions {
+	display: flex;
+	flex-direction: column;
+}
+
+.weatherconditions span {
+	font-size: 20px;
+	padding: 5px;
+}
 
 .weatherfooter {
 	display: flex;
