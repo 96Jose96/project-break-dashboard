@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const city = 'madrid'
+    const city = 'granada'
     const url = `https://api.weatherapi.com/v1/forecast.json?key=812f1314d5e54007a3d92843241907&q=${city}&aqi=no`;
 
     const getWeather = async () => {
@@ -50,9 +50,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentContainer.innerHTML = currentTemplate;
     };
-    getWeather().then((data) => console.log(data))
-    getWeather().then((data) => currentWeather(data));
-    
+
+    const forecastDay = (data) => {
+        const weatherday = data.forecast.forecastday[0].hour
+        const hours = weatherday.map(({time, temp_c, condition: {icon} }) => {
+            const timeHour = time.split(' ')[1];
+            return {timeHour, temp_c, icon}
+        })
+        return hours;
+    };
+
+    const forecastWeather = (hours) => {
+        const forecast = document.getElementById('forecast')
+        hours.forEach(hour => {
+            const forecastTemplate = 
+                `
+                <div class="dayweather">
+                    <span>${hour.timeHour}</span>
+                    <img src='${hour.icon}' />
+                    <span>${hour.temp_c}</span>
+                </div>
+                `   
+            forecast.innerHTML += forecastTemplate
+        })
+    }
+
+    getWeather().then((data => {
+        currentWeather(data);
+        const hours = forecastDay(data);
+        forecastWeather(hours)
+    }))
     
 });
 
