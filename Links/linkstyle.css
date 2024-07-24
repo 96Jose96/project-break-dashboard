@@ -113,24 +113,48 @@ main {
     height: 500px;
     background-color: rgba(240, 248, 255, 0.116);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 li {
+    max-width: 90%;
     background-color: white;
     margin: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .1s linear;
+}
+
+li:hover {
+    transition: all .1s linear;
+    box-shadow: 1px 0px 6px 5px rgba(0, 163, 163,1);
 }
   
-li button {
-    background: #ff4d4d;
+.removelink {
+    background: blue;
     color: white;
     border: none;
     padding: 5px 10px;
+    width: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.removelink img {
+    width: 20px;
 }
 
 .linkfooter {

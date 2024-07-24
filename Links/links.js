@@ -51,7 +51,8 @@ const addNewLink = (link) => { //pintar links en el documento
 
 const addDeleteListener = (li, link) => {  //agregar evento eliminar link
     const removeBtn = li.querySelector('.removelink')
-    removeBtn.addEventListener('click', () => {
+    removeBtn.addEventListener('click', (e) => {
+        e.stopPropagation(); // evitar que se active el link al borrar
         deleteLink(link, li)
     })
 }
