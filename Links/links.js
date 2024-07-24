@@ -59,7 +59,7 @@ const addDeleteListener = (li, link) => {  //agregar evento eliminar link
 
 const deleteLink = (link, li) => {  //borrar link de localStorage y documento
     let links = loadLinkLocalStorage()
-    const index = links.findIndex(storedLink => storedLink.name === link.name && storedLink.url === link.url)
+    const index = links.findIndex(savedLink => savedLink.name === link.name && savedLink.url === link.url)
     if (index !== -1) {
         links.splice(index, 1)
         localStorage.setItem('links', JSON.stringify(links))
