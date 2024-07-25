@@ -162,7 +162,7 @@ section {
 }
 
 .weatherfooter img {
-	width: 50px;
+	width: 40px;
 }
 
 .weatherfooter::after, .weatherfooter::before {

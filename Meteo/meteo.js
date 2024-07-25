@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const city = 'granada'
+    const city = 'madrid'
     const url = `https://api.weatherapi.com/v1/forecast.json?key=812f1314d5e54007a3d92843241907&q=${city}&aqi=no`;
 
     const getWeather = async () => {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="dayweather">
                     <span>${hour.timeHour}</span>
                     <img src='${hour.icon}' />
-                    <span>${hour.temp_c}</span>
+                    <span>${hour.temp_c} ºc</span>
                 </div>
                 `   
             forecast.innerHTML += forecastTemplate

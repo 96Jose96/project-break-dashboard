@@ -69,15 +69,14 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 20px;
-	background-image: url(../Wallpapers/Wallpaper2.jpg);
 	background-position: center;
 	background-size: cover;
 }
 
 .digitalclock {
-	width: 100%;
-	font-size: 50px;
-	font-weight: 700;
+	width: fit-content;
+	font-size: 25px;
+	font-weight: 500;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -85,6 +84,8 @@ main {
 	margin: 0 auto;
 	gap: 15px;
 	color: white;
+	background-color: rgba(240, 248, 255, 0.116);
+	border-radius: 10px;
 }
 
 .template {
@@ -93,8 +94,6 @@ main {
 	width:fit-content;
 	align-items: center;
 	padding: 20px;
-	background-color: rgba(240, 248, 255, 0.116);
-	border-radius: 5px;
 }
 
 .clock {
@@ -105,11 +104,8 @@ main {
 	display: flex;
 	justify-content: center;
 	padding: 15px;
-	width: fit-content;
-	background-color: rgba(0, 0, 0, 0.438);
-	border-radius: 10px;
-	box-shadow: 0 0 10px white;
 	font-size: 30px;
+	font-weight: 400;
 }
 
 .clockfooter {
@@ -121,7 +117,7 @@ main {
 }
 
 .clockfooter img {
-	width: 50px;
+	width: 40px;
 }
 
 .clockfooter::after, .clockfooter::before {

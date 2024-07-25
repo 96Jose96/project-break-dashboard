@@ -36,7 +36,7 @@ const addNewLink = (link) => { //pintar links en el documento
     li.innerHTML = 
         `
         ${link.name}
-        <button class="removelink"><img src='./Assets/delete-svgrepo-com.svg' alt='delete' /></button>
+        <button class="removelink"><img src='../Index/assets/delete-svgrepo-com.svg' alt='delete' /></button>
         `
         li.addEventListener('click', (e) => {
             // Evitar que el clic en el botón de eliminar active este evento

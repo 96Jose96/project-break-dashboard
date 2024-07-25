@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./indexstyle.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <main id="main">
+        <section class="digitalclock">
+            <div class="template">
+                <div id="clock" class="clock"></div>
+                <span id="date"></span>
+            </div>
+            <span id="phrases" class="phrases"></span>
+        </section>
+        <div class="mainindex">
+            <div class="leftcontainer">
+                <section class="wheathercontainer">
+                    <div class="currentcontainer" id="currentcontainer"></div>
+                    <div class="forecast" id="forecast"></div>
+                </section>
+                <section>
+                    <div class="maincontainer">
+                        <span>Crea tu contraseña segura</span>
+                        <div class="container">
+                            <span>Número de caracteres para la contraseña</span>
+                            <div class="input">
+                                <input type="number" id="input" min="12" max="50" placeholder="12-50">
+                                <button id="generatebtn">Generar contraseña</button>
+                            </div>
+                            <div class="password" id="randompassword"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="rightcontainer">
+                <section>
+                    <div class="linkcontainer">
+                        <span>Añade tu enlace de interés</span>
+                        <input id="nameinput" type="text" placeholder="Nombre para tu enlace" />
+                        <input id="urlinput" type="text" placeholder="Introduce la URL" />
+                        <button class="linkbtn" id="linkbtn">Añadir enlace</button>
+                        <div class="linklist" id="linklist"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <a href="../Clock and date/clock.html"><img src="../Assets/Footer/clock-circle-svgrepo-com.svg" alt="clock"/></a>
+            <a href="../Meteo/meteo.html"><img src="../Assets/Footer/weather-svgrepo-com.svg" alt="weather"/></a>
+            <a href="../Password/password.html"><img src="../Assets/Footer/Password.svg" alt="password"/></a>
+            <a href="../Links/links.html"><img src="../Assets/Footer/link-svgrepo-com.svg" alt="links"/></a>
+        </footer>
+    </main>
+    <script src="./clock-withoutphrases.js"></script>
+    <script src="../Meteo/meteo.js"></script>
+    <script src="../Password/password.js"></script>
+    <script src="../Links/links.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
